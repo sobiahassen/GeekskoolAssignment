@@ -14,14 +14,14 @@
        accumulator
       (recur (rest input) 
              (let [intermediate (clojure.string/split (first input) #":x:")] ;; using recur as clojure does not 
-                 (assoc accumulator                                         ;; privide tail call optimization
-                       (keyword (first intermediate))
-                       (dissoc (zipmap [:u-id :g-id :ignore :home-dir :shell]
+                 (assoc accumulator                                          ;; provide tail call optimization
+                       (keyword (first intermediate))                        ;; using assoc to map parsed values to their keys
+                       (dissoc (zipmap [:u-id :g-id :ignore :home-dir :shell];; using dissoc to remove the field to be ignored
                                        (clojure.string/split (second intermediate ) #":"))
                       :ignore)))))))
                               
 
-(mapper (clojure.string/split-lines (slurp "passwd.txt")))  ;; size if file "passwd.txt" is small we can keep it 
+(mapper (clojure.string/split-lines (slurp "passwd.txt")))  ;; size of file "passwd.txt" is small we can keep it 
                                                             ;; in the memory therefore using (slurp)
 
 
