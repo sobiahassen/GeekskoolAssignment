@@ -1,0 +1,44 @@
+{:mukesh
+ {:u-id "1000", :home-dir "/home/mukesh", :shell "/bin/bash", :g-id "100"}
+ :gdm
+ {:u-id "120", :home-dir "/var/lib/gdm", :shell "/sbin/nologin", :g-id "120"}
+ :avahi {:u-id "84", :home-dir "/", :shell "/bin/nologin", :g-id "84"}
+ :daemon {:u-id "2", :home-dir "/", :shell "/usr/bin/nologin", :g-id "2"}
+ :git {:u-id "996", :home-dir "/", :shell "/bin/bash", :g-id "996"}
+ :mail
+ {:u-id "8"
+  :home-dir "/var/spool/mail"
+  :shell "/usr/bin/nologin"
+  :g-id "12"}
+ :systemd-timesync
+ {:u-id "192", :home-dir "/", :shell "/usr/bin/nologin", :g-id "192"}
+ :rtkit {:u-id "133", :home-dir "/proc", :shell "/bin/false", :g-id "133"}
+ :systemd-journal-remote
+ {:u-id "998", :home-dir "/", :shell "/sbin/nologin", :g-id "998"}
+ :dbus {:u-id "81", :home-dir "/", :shell "/usr/bin/nologin", :g-id "81"}
+ :ftp
+ {:u-id "14", :home-dir "/srv/ftp", :shell "/usr/bin/nologin", :g-id "11"}
+ :usbmux {:u-id "140", :home-dir "/", :shell "/sbin/nologin", :g-id "140"}
+ :deluge
+ {:u-id "125", :home-dir "/srv/deluge", :shell "/bin/false", :g-id "125"}
+ :systemd-bus-proxy
+ {:u-id "194", :home-dir "/", :shell "/usr/bin/nologin", :g-id "194"}
+ :polkitd {:u-id "102", :home-dir "/", :shell "/usr/bin/nologin", :g-id "102"}
+ :root {:u-id "0", :home-dir "/root", :shell "/bin/bash", :g-id "0"}
+ :bin {:u-id "1", :home-dir "/bin", :shell "/usr/bin/nologin", :g-id "1"}
+ :http
+ {:u-id "33", :home-dir "/srv/http", :shell "/usr/bin/nologin", :g-id "33"}
+ :systemd-network
+ {:u-id "193", :home-dir "/", :shell "/usr/bin/nologin", :g-id "193"}
+ :systemd-journal-gateway
+ {:u-id "191", :home-dir "/", :shell "/usr/bin/nologin", :g-id "191"}
+ :nobody {:u-id "99", :home-dir "/", :shell "/usr/bin/nologin", :g-id "99"}
+ :uuidd {:u-id "68", :home-dir "/", :shell "/usr/bin/nologin", :g-id "68"}
+ :colord
+ {:u-id "124", :home-dir "/var/lib/colord", :shell "/bin/false", :g-id "124"}
+ :systemd-resolve
+ {:u-id "195", :home-dir "/", :shell "/usr/bin/nologin", :g-id "195"}
+ :systemd-coredump
+ {:u-id "999", :home-dir "/", :shell "/sbin/nologin", :g-id "999"}
+ :systemd-journal-upload
+ {:u-id "997", :home-dir "/", :shell "/sbin/nologin", :g-id "997"}}
